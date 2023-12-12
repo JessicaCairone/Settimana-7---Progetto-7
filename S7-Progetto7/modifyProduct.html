@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Editing product page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body onload="onloadCardDetails ()">
+    <h1 class="h1 text-center mt-3 mb-5">Modifica il prodotto</h1>
+    <br/>
+<hr/>
+
+<form>
+    <div class="container d-flex flex-column justify-content-center">
+        <div class="col-5">
+        <img src="" id="containerImage" class="ms-5" alt="phone">
+    </div>
+        <div class=" my-3">
+            <label class="col-2" for="productId">Id</label>
+            <input type="text" id="productId">
+             </div>
+        <div class=" my-3">
+        <label class="col-2" for="productName">Nome</label>
+        <input type="text" id="productName">
+         </div>
+         <div class=" my-3">
+        <label class="col-2" for="productDescription">Descrizione</label>
+        <input type="text" id="productDescription">
+        </div>
+        <div class="my-3">
+        <label class="col-2" for="productBrand">Brand</label>
+        <input type="text" id="productBrand">
+        </div>
+        <div class=" my-3">
+        <label class="col-2" for="UrlImg">URL Image</label>
+        <input type="text" id="UrlImg" readonly disabled value="https://us.123rf.com/450wm/artshotphoto/artshotphoto2201/artshotphoto220100030/180434190-smartphone-generico-o-cellulare-touch-screen.jpg">
+        </div>
+        <div class=" my-3">
+        <label class="col-2" for="productPrice">Prezzo</label> 
+        <input type="number" id="productPrice">
+    </div>
+    <div class="mb-3 mt-4">
+        <a href="#" class="btn btn-outline-warning" onclick="EditObject()">Salva</a>
+        <a href="#" class="btn btn-outline-dark"  onclick="reset()">Reset</a>
+        <a href="#" class="btn btn-outline-danger" onclick="deleteProduct2()">Elimina</a>
+        
+        </div>
+</div>
+
+    </form>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="assets/script.js"></script>
+</body>
+</html>
